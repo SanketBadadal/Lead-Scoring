@@ -10,8 +10,7 @@ The CEO, in particular, has given a ballpark of the target lead conversion rate 
 Read and analyze the data.
 ## Step 2: Data Cleaning:
 a. First step to clean the dataset we chose was to drop the variables having unique values.
-b. Then, there were few columns with value ‘Select’ which means the leads did not
-choose any given option. We changed those values to Null values.
+b. Then, there were few columns with value ‘Select’ which means the leads did not choose any given option. We changed those values to Null values.
 c. We dropped the columns having NULL values greater than 40%.
 d. Next, we removed the imbalanced and redundant variables. This step also included imputing the missing values as and where required with median values in case of numerical variables and creation of new classification variables in case of categorical variables. The outliers were identified and removed. Also, in one column was having identical label in different cases (first letter small and capital respectively). We fixed this issue by converting the label with first letter in small case to upper case.
 e. All sales team generated variables were removed to avoid any ambiguity in final solution.
@@ -42,10 +41,10 @@ c. We could also observe the new values of the ‘accuracy=80.1%, ‘sensitivity
 ## Step10: Making Predictions on Test Set
 a. Then we implemented the learnings to the test model and calculated the conversion probability based on the Sensitivity and Specificity metrics and found out the accuracy value to be 81.6%, Specificity= 84.4%, Precision=73.4% Recall= 76.7%
 ## Step 11: Conclusion:
- The lead score calculated in the test set of data shows the conversion rate of 81% on the final predicted model which clearly meets the expectation of CEO has given a ballpark of the target lead conversion rate to be around 80%.
- Good value of sensitivity of our model will help to select the most promising leads.
- Our model is having stability an accuracy with adaptive environment skills. Means it will adjust with the company’s requirement changes made in future.
- Features which contribute more towards the probability of a lead getting converted are:
+### The lead score calculated in the test set of data shows the conversion rate of 81% on the final predicted model which clearly meets the expectation of CEO has given a ballpark of the target lead conversion rate to be around 80%.
+### Good value of sensitivity of our model will help to select the most promising leads.
+### Our model is having stability an accuracy with adaptive environment skills. Means it will adjust with the company’s requirement changes made in future.
+### Features which contribute more towards the probability of a lead getting converted are:
 i. Total Visits
 ii. Total Time Spent on Website
 iii. Page Views Per Visit
